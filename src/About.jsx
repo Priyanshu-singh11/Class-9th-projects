@@ -10,11 +10,11 @@ export default function About() {
             <div className="col-md-12 d-flex my-4  shadow p-4 box-anim">
               <div className="row p-3">
                 <div className="col-md-6">
-                  <img src="./school.jpg" className="images" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1cXW0zJG5S5InX3wyNC4TzlnlFiTF6_r2PA&s" className="images" />
                 </div>
                 <div className="col-md-6 flex-column justify-content-center align-items-center">
                   <h1>Information </h1>
-                  <p>This school located in uttar pradesh Pratapgarh vasudev nagar narayan das pure<br/></p>
+                  <p>This school is located in uttar pradesh Pratapgarh vasudev nagar narayan das pure<br/></p>
                   
                   <button className="btn btn-outline-dark px-4 fill-form mb-3"><Link to="/contact">Contact</Link></button>
                 </div>

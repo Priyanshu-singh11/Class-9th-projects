@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { useHistory } from "react-router-dom";
 import './App.css'
 import Send from './Send.jsx'
 const Contact = () => {
@@ -45,7 +44,7 @@ const Contact = () => {
       setEmail("")
       setNumber("")
       setComment("")
-      history.push('/about')
+      
       
     }
     else {

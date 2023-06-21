@@ -1,0 +1,43 @@
+[debug] [2023-06-21T12:07:16.853Z] ----------------------------------------------------------------------
+[debug] [2023-06-21T12:07:16.856Z] Command:       /nix/store/dj805sw07vvpbxx39c8g67x8qddg0ikw-nodejs-18.12.1/bin/node /home/runner/Pkbd/.config/npm/node_global/bin/firebase login
+[debug] [2023-06-21T12:07:16.861Z] CLI Version:   12.4.0
+[debug] [2023-06-21T12:07:16.862Z] Platform:      linux
+[debug] [2023-06-21T12:07:16.862Z] Node Version:  v18.12.1
+[debug] [2023-06-21T12:07:16.863Z] Time:          Wed Jun 21 2023 12:07:16 GMT+0000 (Coordinated Universal Time)
+[debug] [2023-06-21T12:07:16.863Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2023-06-21T12:07:17.062Z] ----------------------------------------------------------------------
+[debug] [2023-06-21T12:07:17.066Z] Command:       /nix/store/dj805sw07vvpbxx39c8g67x8qddg0ikw-nodejs-18.12.1/bin/node /home/runner/Pkbd/.config/npm/node_global/bin/firebase login
+[debug] [2023-06-21T12:07:17.066Z] CLI Version:   12.4.0
+[debug] [2023-06-21T12:07:17.066Z] Platform:      linux
+[debug] [2023-06-21T12:07:17.067Z] Node Version:  v18.12.1
+[debug] [2023-06-21T12:07:17.069Z] Time:          Wed Jun 21 2023 12:07:17 GMT+0000 (Coordinated Universal Time)
+[debug] [2023-06-21T12:07:17.069Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=348335462&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-06-21T12:07:44.658Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2023-06-21T12:07:44.658Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"d813d279-7186-46a3-8bf7-98a2dbd984ca"}
+[debug] [2023-06-21T12:07:45.537Z] <<< [apiv2][status] POST https://auth.firebase.tools/attest 200
+[debug] [2023-06-21T12:07:45.538Z] <<< [apiv2][body] POST https://auth.firebase.tools/attest {"token":"PmyyZyA58VCJekONzC6LYRocnnWXUHCVQgRi5ysGodw"}
+[info] 
+[info] To sign in to the Firebase CLI:
+[info] 
+[info] 1. Take note of your session ID:
+[info] 
+[info]    D813D
+[info] 
+[info] 2. Visit the URL below on any device and follow the instructions to get your code:
+[info] 
+[info]    https://auth.firebase.tools/login?code_challenge=4--lJT89uKnRG9tQTh0gcu_lOwW4UM-WK-n038kOLMA&session=d813d279-7186-46a3-8bf7-98a2dbd984ca&attest=PmyyZyA58VCJekONzC6LYRocnnWXUHCVQgRi5ysGodw
+[info] 
+[info] 3. Paste or enter the authorization code below once you have it:
+[info] 
