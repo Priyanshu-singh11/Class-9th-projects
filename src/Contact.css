@@ -6,7 +6,9 @@
   box-sizing:border-box;
   font-family: 'Lexend Deca', sans-serif;
 }
-
+body{
+  background:white;
+}
 ::selection{
   color:white;
   background:black;

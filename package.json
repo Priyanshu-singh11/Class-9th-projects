@@ -12,6 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "react-javascript": "file:",
+    "react-lazy-load": "^4.0.1",
+    "react-lazy-load-image-component": "^1.6.0",
     "react-router": "^6.12.0",
     "react-router-dom": "^6.12.0"
   },

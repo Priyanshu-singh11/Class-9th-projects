@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Montserrat:wght@400;700&family=Mulish:wght@300&family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap');
+
+body {
+    background: whitesmoke;
+}
+.container-of-quotes{
+  max-width:968px;
+  margin:auto;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+}
+h1{
+  font-size:2rem;
+}
+.box{
+  width:300px;
+  height:auto;
+  z-index:-777;
+}
+.box img{
+  width:100px;
+  height: auto;
+  border-radius:5px;
+  transition: 1000ms;
+}
+.q-row{
+  display: flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.box:hover{
+transform:scale(1.1);
+  z-index: 111111;
+  
+}
+.container-of-quotes{
+  margin:auto;
+}

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Montserrat:wght@400;700&family=Mulish:wght@300&family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap');
-
+.home,.about{
+  max-width:968px;
+  margin:auto;
+}
 *{
   padding:0;
   margin:0;
@@ -38,10 +41,10 @@ h1{
 }
 .experience{
   margin:9px 0;
-  
+  border-radius:11px;
 }
 .experience:hover{
-  box-shadow:rgb(149,157,165,0.5) 0px 8px 29px;
+  box-shadow:rgb(149,157,165,0.7) 0px 8px 22px;
   transition:500ms;
 }
 .text-center{
@@ -56,7 +59,7 @@ h1{
   color:white;
 }
 .shadow-active{
-  box-shadow:rgb(149,157,165,0.5) 0px 11px 39px;
+  box-shadow:rgb(149,157,165,0.7) 0px 11px 39px;
 }
 .competition{
   margin:9px 0;
@@ -136,25 +139,13 @@ font-size{
 .fill-form a{
   text-decoration:none;
   font-weight:bolder;
-  color:gray;
+  color:black;
   text-spacing:11px;
 }
-.fill-form:hover{
-  box-shadow:0 3px 11px rgb(238, 130, 238,0.9);
-  color:white;
-  background: black;
-  transition:400ms;
-}
-.box-anim:hover .fill-form{
-  box-shadow:0 3px 11px rgb(238, 130, 238,0.9);
-}
 
-.box-anim:hover{
-  color:white;
-  background: black;
-  color:white;
-  transition: 900ms;
-}
+
+
+
 
 a{
   text-decoration:none;
