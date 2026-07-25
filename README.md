@@ -22,7 +22,7 @@ A collection of web development projects built during Class 9th using **React**,
 
 ---
 
-### 2. 🧑‍💻 [Developer Portfolio](.)
+### 2. 🧑‍💻 [Developer Portfolio](./protofolio/)
 
 > A personal portfolio website with Home, About, and Contact pages. Showcases skills and platforms where you can hire the developer.
 
@@ -34,6 +34,45 @@ A collection of web development projects built during Class 9th using **React**,
 
 **Tech:** React, Vite, React Router, Bootstrap, CSS
 
+👉 [Go to project →](./protofolio/)
+
+---
+
+### 3. 💬 [Quotes App](./quotes/)
+
+> A quotes generator app that fetches and displays inspirational quotes.
+
+**Tech:** React, Vite, CSS
+
+👉 [Go to project →](./quotes/)
+
+---
+
+### 4. 🛒 [Ecommerce App](./ecommerce/)
+
+> A basic ecommerce web app with product listings and cart functionality.
+
+**Tech:** React, Vite, CSS
+
+👉 [Go to project →](./ecommerce/)
+
+---
+
+### 5. 🍽️ [Restaurant App](./RESTURANT/)
+
+> A modern restaurant web app to browse food categories, search dishes, explore world cuisines, and view detailed recipes. Features a clean, responsive UI with popular and vegetarian picks.
+
+**Key Features:**
+- Search for any dish or recipe
+- Browse by food category (Vegan, Pasta, Seafood, etc.)
+- Explore cuisines from around the world
+- View full recipe with ingredients & instructions
+- Loader, error, and failed-fetch states handled gracefully
+
+**Tech:** React, Vite, React Router, React Icons, Font Awesome, CSS
+
+👉 [Go to project →](./RESTURANT/)
+
 ---
 
 ## 🛠️ How to Run Any Project
@@ -42,8 +81,8 @@ A collection of web development projects built during Class 9th using **React**,
 # Clone the repo
 git clone https://github.com/Priyanshu-singh11/Class-9th-projects.git
 
-# Go into a project folder
-cd Class-9th-projects/todo-list
+# Go into a project folder (e.g. RESTURANT)
+cd Class-9th-projects/RESTURANT
 
 # Install dependencies
 npm install
