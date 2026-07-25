@@ -1,0 +1,51 @@
+let Category = [
+  {
+    name:"smartphone",
+  image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQuKlYEzX1bGgeEdPTBdCVXE955i6RaO-mZaj6-abPMXJuTAWj8miQnEvx&s=10"
+},
+{
+    name:"womens-dresses",
+    image:`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiKbJaukYgde6LnWRR0Q9npZn3roLwcNuOVA&usqp=CAU`
+},
+{
+    name:"womens-watches",
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhUVGoLzdSLeS6-14xyhN9yIELGCawIY610l7tE6LG9rTSxoOSjGnQGdI&s=10"
+},
+{
+    name:"womens-bags",
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThsk5UZy9U6HzQYcyJkjFdWCCCFd90zjM_QE08lghywIibJ0aqRSm_J10&s=10"
+},
+{
+    name:"womens-shoes",
+    image:"https://img.freepik.com/premium-photo/white-high-heel-women-shoes-white-background-white-shoe-women-beauty-fashion-concept-fashionable-women-shoes-isolated-white-background-stylish-classic-women-leather-shoe_293990-2651.jpg?w=1060"
+},
+
+{
+    name:"womens-jewellery",
+    image:"https://thumbs.dreamstime.com/b/luxury-gold-white-pearl-rings-earrings-bracelet-jewelry-background-pink-jewelry-background-fashion-background-fashion-173418599.jpg"
+},
+{
+    name:"tops",
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq0KtSTOqyeRaKG9om4g_h3gWpJ7d1V__wMQ&usqp=CAU"
+},
+{
+    name:"home-decoration",
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGfMr1qKk9ljc481MPkhi8iNHhfkylGBKOww&usqp=CAU"
+},
+{
+    name:"furniture",
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDAHI9h_5pjSy77ZaptdW7yHsm6QUHSDpbcw&usqp=CAU"
+},
+{
+    name:"automative",
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBzavfVJ1OCEDpsNmRn8jRCfqNa-GBkVM6MXx8IK-LzJsouc0q6o8Eh3du&s=10"
+},
+{
+    name:"motorcycle",
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrXPbkjly0ERcwMiV6wfcMNz5_x3FfKeuRYzrZhMQsFeQEduFseQdyLZM&s=10"
+},{
+    name:"groceries",
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR5xgzEUVRFt_MWz6uHkkS-yi2Bo75JkxDGf5Vgkr8bR_gAfyDxFYg8nM&s=10"
+}
+]
+export default Category;
