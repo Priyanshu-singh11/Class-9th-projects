@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600;700&family=Josefin+Sans:ital,wght@0,300;0,600;1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Montserrat:wght@400;700&family=Mulish:wght@300&family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap');
+body{
+  max-width:970px;
+  margin:auto;
+}
+.col-md-5{
+  font-family: 'Cormorant', serif;
+}
+.col-md-7 img{
+  border-radius:2.5rem;
+}
+.box{
+    width:300px;
+    height:auto;
+    margin:auto;
+    justify-content:center;
+    
+}
+.b-family{
+  font-family: 'Lexend Deca', sans-serif;
+  color:black;
+}
+.show-modal{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  color: black;
+  backdrop-filter: blur(10px);
+}
+.modal-data{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  max-width:30rem;
+  width:300px;
+  background:white;
+  border-radius:1rem;
+}

@@ -1,0 +1,155 @@
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Montserrat:wght@400;700&family=Mulish:wght@300&family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap');
+    *{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+  
+}
+body{
+  background:white;
+  margin:auto;
+}
+    .todo-body{
+      background:white;
+      height:100vh;
+      overflow:scroll;
+      margin:auto;
+    }
+    .nav{
+        margin:1rem 0;
+        display:flex;
+        justify-content:center;
+         
+    }
+    .header{
+        
+      margin-right:4rem;
+        display:flex;
+        justify-content:center;
+      align-items:center;
+    }
+    
+    .title{
+        text-align:center;
+        margin:2rem 0;
+        
+    }
+    
+    .input-box{
+        margin:auto;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        max-width:400px;
+        
+    }
+    .input-box input{
+        border:none;
+        padding:5px 9px;
+        font-size:17px;
+        border-radius:5px;
+        outline:none;
+        border:1px solid gray;
+    }
+    input:focus{
+        border:3px solid black;
+    }
+    
+    .add-todo{
+        font-size:17px;
+        padding:7px 19px;
+        border:none;
+        background:#53c65d;
+        margin:3px 0 0 11px;
+        color:white;
+        border-radius:4px;
+    }
+    .all-item-box{
+        margin:3rem 0 0 0;
+    }
+    .all-items{
+        margin:auto;
+        max-width:313px;
+        border-bottom:1px solid gray;
+    }
+.item-body{
+  height:100vh;
+  overflow:scroll;
+}
+    
+    .item{
+        border-top:1px solid gray;
+        padding:9px 5px;
+        display: flex;
+      color:white;
+    }
+    .item:hover{
+        background:#ff004926;
+       
+    }
+    .item-text{
+        width:200px;
+        margin:auto;
+      display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .checkbox{
+        margin:0 11px;
+        float:left;
+      accent-color:lime;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .item-btn{
+        
+         display:flex;
+      flex-direction: column;
+      
+        justify-content:center;
+        align-items:center;
+    }
+    .delete-todo{
+        background:#cb223b;
+        color:white;
+        padding:5px 9px;
+        border:none;
+        margin:0 3px;
+        float:left;
+        border-radius:3px;
+        
+    }
+    .rem-box{
+      margin:auto;
+      display:flex;
+      justify-content: center;
+      }
+    .remove-all{
+        padding:5px 11px;
+        border-radius:19px;
+        background:#E91E63;
+        opacity:0.90;
+        border:none;
+        color:white;
+        font-size:1.2rem;
+        outline:none;
+        margin:21px 0;
+    }
+    .remove-all:hover{
+      transition:300ms;
+        box-shadow:0px 2px 19px rgb(222, 49, 99);
+    }
+    .complete-box{
+      margin:2rem 0;
+      
+      }
+   .update-btn{
+        background:#85ff40;
+        color:white;
+        padding:3px 4px;
+        border:none;
+        border-radius:3px;
+        margin:2px 0;
+      }
