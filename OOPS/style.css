@@ -1,0 +1,103 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background:whitesmoke;
+}
+
+header{
+  padding:2rem 0.3rem;
+  margin:0 0 4rem 0;
+  font-size:21px;
+  font-weight: bolder;
+  width:100%;
+  box-shadow: 0 1px 21px 0.1px #00000021;
+ 
+}
+.creating-account{
+  max-width:500px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  padding:2rem 1rem;
+ 
+  background: black;
+
+  margin:auto;
+  box-shadow: 0 1px 21px 0.1px #00000021;
+  border-radius: 10px;
+
+}
+.creating-account h3{
+  color:white;
+  text-align: center;
+  padding:0 0 1rem 0;
+}
+.btn{
+  text-align: center;
+  padding:1rem 0 0 0;
+}
+.btn button{
+  padding:1rem 3rem;
+  background:black;
+  border: none;
+  color:white;
+  border-radius:0.2rem;
+  background:white;
+  color:black;
+}
+.btn button:hover{
+  background:black;
+  color:white;
+  transition:0.2s;
+  
+  box-shadow: 0 0 25px 0.1px white;
+
+}
+#label{
+  padding:0.1rem 0.1rem;
+  border:none;
+  color:gray;
+}
+#name,#money,#deposit,#accountNumber{
+  padding:0.4rem 0.1rem;
+  outline: none;
+  border:none;
+  background:none;
+  border-bottom:2px solid white;
+  color:white;
+}
+
+#money::placeholder, #name::placeholder {
+  color:white;
+  font-size:14px;
+}
+.updating-account h3{
+  color:black;
+  padding:0 0 1rem 0;
+  text-align: center;
+}
+.updating-account{
+  max-width:500px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  padding:2rem 1rem;
+  background:white;
+  margin:auto;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  box-shadow: 0 1px 21px 0.1px #00000021;
+ 
+  border-radius: 10px;
+}
+#deposit,#accountNumber{
+  border-bottom:2px solid black;
+  color:black;
+}
+.deposit{
+  box-shadow: 0 1px 21px 0.1px #00000021;
+ 
+}

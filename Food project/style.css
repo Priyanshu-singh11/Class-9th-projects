@@ -1,0 +1,119 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background:#000000;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+
+.card {
+  width: 300px;
+  height: auto;
+  background: white;
+  margin: 1rem auto;
+  padding: 0.5rem 0.55rem;
+  border-radius: 3px;
+  margin:1rem 0.7rem;
+}
+
+.card .category-num {
+  border-radius: 5px;
+  
+  padding: 0.5rem 1rem;
+  background: black;
+  
+  color: white;
+  text-align: center;
+  font-size: 17px;
+
+}
+
+.card-title {
+  font-weight: bolder;
+  font-size: 2.7rem;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.card-head {
+  display: flex;
+
+}
+
+.card-head span {
+  margin: 0.6rem 0 0 1rem;
+  color:black;
+}
+
+.card-descrip {
+  color: #666;
+  font-family: 'Cormorant Garamond', serif;
+  padding: 0 0 0.3rem 0;
+  font-size: 16px;
+}
+
+.card-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  padding: 0.3rem 0;
+  border-radius: 11px;
+}
+
+.card-btn {
+  padding: 1rem 2rem;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.card-type {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.navbar{
+        background:whitesmoke;
+        padding:1rem;
+    }
+    .navbar .modes{
+        margin:auto;
+        text-align:center;
+    }
+    .modes button{
+        background:whitesmoke;
+        border:none;
+        color:black;
+        font-size:17px;
+        padding:11px 19px;
+        font-weight:bolder;
+        
+    }
+    .modes button:hover{
+        border-bottom:1px solid black;
+        transition:0.2s;
+    }
+    .inpBox{
+      text-align:center;
+    }
+    .inpBox input{
+      border:none;
+      outline: none;
+      background:white;
+      border-radius:5px;
+      padding:0.5rem 0.3rem;
+      margin:2rem 1rem;
+    }

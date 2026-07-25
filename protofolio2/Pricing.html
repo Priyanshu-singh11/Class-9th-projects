@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <title>Dev Pricing</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .all-pricing {
+      max-width: 768px;
+      margin: auto;
+      padding: 1rem 0.5rem;
+    }
+
+    .all-pricing > h1,
+    .react-div h1 {
+      font-family: "Raleway", sans-serif;
+      font-weight: 900;
+    }
+
+    .skill {
+      margin: 3rem 0 0 0;
+    }
+
+    p {
+      font-weight: 200;
+      font-family: 'Poppins', serif;
+      font-size: 17px;
+    }
+
+    .price-card {
+      width: 100%;
+      padding: 1rem;
+      font-family: 'Poppins', serif;
+      font-weight: bolder;
+      margin: 1rem 0 4rem 0;
+      border-radius: 5px;
+      color: white;
+      overflow: hidden;
+    }
+
+    #first {
+      background-image: linear-gradient(to bottom right, #FF512F, #DD2476);
+    }
+
+    #sec {
+      background-image: linear-gradient(to bottom right, #72FFB6, #10D164);
+      color: black;
+    }
+
+    #third {
+      background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+      color: black;
+    }
+
+    #fourth {
+      background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    }
+
+    #fifth {
+      background-image: linear-gradient(111.4deg, rgba(2, 255, 4, 1) 18.4%, rgba(0, 232, 237, 1) 100.2%);
+      color: black;
+    }
+
+    #six {
+      background-color: #FBAB7E;
+      background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    }
+
+    #seven {
+      background-image: linear-gradient(288deg, rgba(0, 85, 255, 1) 1.5%, rgba(4, 56, 115, 1) 91.6%);
+    }
+
+    #eight {
+      background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    }
+
+    #nine {
+      background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+      color: black;
+    }
+
+    .price-card li,
+    .react-div p {
+      font-family: 'Poppins', serif;
+      font-weight: 200;
+      list-style: none;
+      font-size: 17px;
+    }
+
+    .price-card li .icon {
+      font-size: 1.5rem;
+      margin: 0 0.5rem 0 0rem;
+    }
+
+    .price-card button {
+      font-family: 'Poppins', serif;
+      font-weight: 900;
+      font-size: 1.5rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 35px;
+      margin: 0.5rem 0;
+      background-color: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .price-card button:hover {
+      background: black;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .react-divs {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .react-div {
+      background: white;
+      padding: 1rem 0.5rem;
+      margin: 1.7rem 0;
+      width: 100%;
+      border-radius: 11px;
+      color: black;
+    }
+
+    .react-div p {
+      color: rgb(85, 85, 85);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="all-pricing">
+    <h1>Pricing</h1>
+    <p>Every project is different, so prices depend on what you need. The ranges below are realistic estimates — final price is decided after a short free call to understand your project.</p>
+
+    <!-- ── MERN FULL STACK ── -->
+    <div class="Full-pricing-box">
+      <h1 class="skill">FULL STACK — React + Node.js (MERN)</h1>
+      <p style="margin: 0.5rem 0 0 0;">A complete website with a frontend that users see and a backend that stores data, handles logins, and runs the business logic. Good for startups, business platforms, and apps that need accounts and databases.</p>
+
+      <div class="price-card" id="first">
+        <h1>STARTER</h1>
+        <ul>
+          <li><i class="ri-verified-badge-fill icon"></i>Simple website — a few pages, contact form, login and signup</li>
+          <li><i class="ri-verified-badge-fill icon"></i>User accounts — register, login, logout safely</li>
+          <li><i class="ri-verified-badge-fill icon"></i>Data saved in a database (MongoDB)</li>
+          <li><i class="ri-verified-badge-fill icon"></i>Emails sent automatically (welcome email, password reset)</li>
+          <li><i class="ri-verified-badge-fill icon"></i>Works on mobile, tablet, and desktop</li>
+          <li><i class="ri-verified-badge-fill icon"></i>Hosted and live on the internet</li>
+        </ul>
+        <button>$500 – $2,000</button>
+      </div>
+
+      <div class="price-card" id="sec">
+        <h1>BUSINESS</h1>
+        <ul>
+          <li><i class="ri-verified-badge-fill icon"></i>Everything in Starter</li>
+          <li><i class="ri-verified-badge-fill icon"></i>OTP verification — login confirmed by phone or email code</li>
+          <li><i class="ri-verified-badge-fill icon"></i>Different user roles — e.g. admin sees more than a normal user</li>
+          <li><i class="ri-verified-badge-fill icon"></i>Payment integration — accept online payments (Razorpay / Stripe)</li>
+          <li><i class="ri-verified-badge-fill icon"></i>File uploads — users can upload images or documents</li>
+          <li><i class="ri-verified-badge-fill icon"></i>Real-time features — like live notifications or chat</li>
+          <li><i class="ri-verified-badge-fill icon"></i>Redis caching — pages load faster for heavy traffic</li>
+          <li><i class="ri-verified-badge-fill icon"></i>Admin panel — you can manage users and content yourself</li>
+        </ul>
+        <button>$2,000 – $8,000</button>
+      </div>
+
+      <div class="price-card" id="third">
+        <h1>ENTERPRISE / SCALABLE PLATFORM</h1>
+        <ul>
+          <li><i class="ri-verified-badge-fill icon"></i>Everything in Business</li>
+          <li><i class="ri-verified-badge-fill icon"></i>GraphQL API — a smarter way for the frontend to talk to the backend, only fetching exactly what it needs</li>
+          <li><i class="ri-verified-badge-fill icon"></i>TanStack Query — the frontend stays in sync with fresh data automatically, no manual refresh needed</li>
+          <li><i class="ri-verified-badge-fill icon"></i>Nginx reverse proxy — routes traffic securely, handles thousands of users at once</li>
+          <li><i class="ri-verified-badge-fill icon"></i>Docker — the whole app is packaged so it runs the same everywhere, no "works on my machine" problems</li>
+          <li><i class="ri-verified-badge-fill icon"></i>Kubernetes — automatically scales up when traffic is high, scales down to save cost</li>
+          <li><i class="ri-verified-badge-fill icon"></i>CI/CD pipeline — new code is tested and deployed automatically, no manual work</li>
+        </ul>
+        <button>$8,000 – $30,000</button>
+      </div>
+    </div>
+
+    <!-- ── NEXT.JS ── -->
+    <div class="Full-pricing-box">
+      <h1 class="skill">NEXT.JS (React with SEO + Speed)</h1>
+      <p style="margin: 0.5rem 0 0 0;">Next.js is React with superpowers — pages load faster, show up on Google more easily, and work even before JavaScript loads. Best for marketing sites, e-commerce, and any business that wants to be found on Google.</p>
+
+      <div class="price-card" id="fourth">
+        <h1>LEARN WHAT AFFECTS THE PRICE</h1>
+        <p style="color:white; margin-bottom:0.5rem;">The cost depends on how complex your project is. Here are the main things that change the price:</p>
+        <ul>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Number of pages</strong> — a 3-page site costs less than a 20-page platform</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Dynamic content</strong> — does it pull live data from a database or is it static text?</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>User accounts</strong> — do people need to log in and have their own data?</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Third-party connections</strong> — payment gateways, maps, SMS, email services etc.</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>SEO needs</strong> — optimised page titles, fast load times, Google-friendly structure</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Ongoing maintenance</strong> — do you need someone to keep it updated after launch?</li>
+        </ul>
+
+        <div class="react-divs">
+          <div class="react-div">
+            <h1>BASIC</h1>
+            <p>A clean, fast website — great for a portfolio, small business, or landing page. Looks professional, works on all devices, and shows up on Google. Example: a freelancer's portfolio or a restaurant's website.</p>
+            <button>$400 – $2,000</button>
+          </div>
+          <div class="react-div">
+            <h1>MEDIUM</h1>
+            <p>A full website with user accounts, a database, OTP login, email notifications, and connected to outside services like payment or maps. Example: an online booking system or a membership platform.</p>
+            <button>$2,000 – $8,000</button>
+          </div>
+          <div class="react-div">
+            <h1>ADVANCE</h1>
+            <p>A large web app with real-time data, GraphQL, TanStack Query for smart data loading, Docker for easy deployment, and Kubernetes for handling lots of users without crashing. Example: a SaaS product used by many businesses at once.</p>
+            <button>$8,000 – $30,000+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── FASTAPI + AI ── -->
+    <div class="Full-pricing-box">
+      <h1 class="skill">PYTHON FastAPI + AI / LLM</h1>
+      <p style="margin: 0.5rem 0 0 0;">FastAPI is a Python tool for building fast, reliable APIs (the engine behind your app). Combined with AI, it can power chatbots, smart search, document analysis, and any feature that uses artificial intelligence. Trained from a full LLM & AI bootcamp — RAG pipelines, LangChain, LangGraph, vector databases, Ollama, and more.</p>
+
+      <div class="price-card" id="fifth">
+        <h1>WHAT AFFECTS THE PRICE</h1>
+        <ul>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Which AI model</strong> — OpenAI (ChatGPT), Gemini, or a free local model running on your own server</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>RAG pipeline</strong> — uploading your own documents so the AI answers questions based on your data, not general knowledge</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Number of API endpoints</strong> — how many things the backend needs to do</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Background jobs</strong> — tasks that run in the background without making the user wait (using Redis + Celery)</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Database</strong> — PostgreSQL for structured data, vector DB for AI search</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Scalability</strong> — how many users need to use it at the same time</li>
+        </ul>
+
+        <div class="react-divs">
+          <div class="react-div">
+            <h1>API ONLY</h1>
+            <p>A backend API with endpoints, a database, and authentication. Think of this as the invisible engine your mobile app or frontend website talks to. No AI — just fast, clean backend logic. Comes with automatic documentation so your team knows how to use it.</p>
+            <button>$300 – $1,500</button>
+          </div>
+          <div class="react-div">
+            <h1>AI-POWERED APP</h1>
+            <p>A backend that connects to an AI (like ChatGPT or Gemini), can read your PDF or website, and answer questions based on it — this is called RAG. Includes background task processing so heavy AI work does not slow your users down.</p>
+            <button>$1,500 – $8,000</button>
+          </div>
+          <div class="react-div">
+            <h1>FULL AI PLATFORM</h1>
+            <p>A complete platform with multiple AI agents working together, long memory across conversations, streaming responses (text appears word by word like ChatGPT), usage tracking, billing hooks, and Kubernetes auto-scaling so it handles thousands of users.</p>
+            <button>$8,000 – $35,000+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── GO / GIN ── -->
+    <div class="Full-pricing-box">
+      <h1 class="skill">GO — Gin Framework + gRPC + Protocol Buffers</h1>
+      <p style="margin: 0.5rem 0 0 0;">Go (Golang) is one of the fastest backend languages in the world. It handles tens of thousands of requests per second without breaking a sweat — perfect when speed and reliability really matter. Trained with hands-on microservices, gRPC, and Protocol Buffers from a dedicated Udemy course.</p>
+
+      <div class="price-card" id="six">
+        <h1>WHAT AFFECTS THE PRICE</h1>
+        <ul>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Speed requirements</strong> — does it need to handle 1,000 users or 100,000 users per minute?</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Communication style</strong> — REST API (normal web requests) or gRPC (lightning-fast communication between internal services)</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Number of microservices</strong> — one big service or many small ones working together?</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Message queues</strong> — Kafka or RabbitMQ for services that talk to each other without waiting</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Redis caching</strong> — storing popular results so the database is not hit every time</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Monitoring</strong> — Prometheus + Grafana dashboards so you can see how your app is performing live</li>
+        </ul>
+
+        <div class="react-divs">
+          <div class="react-div">
+            <h1>SINGLE SERVICE</h1>
+            <p>One fast Go backend with a REST API, PostgreSQL database, JWT login, and Redis cache. Packaged in Docker so it is easy to deploy anywhere. Good for replacing a slow Node or Python backend that can not handle the traffic.</p>
+            <button>$800 – $3,000</button>
+          </div>
+          <div class="react-div">
+            <h1>PRODUCTION SERVICE</h1>
+            <p>A high-performance backend that handles tens of thousands of requests per second. Includes internal gRPC communication (faster than normal HTTP), message queues so services do not block each other, and live monitoring dashboards.</p>
+            <button>$3,000 – $12,000</button>
+          </div>
+          <div class="react-div">
+            <h1>MICROSERVICES PLATFORM</h1>
+            <p>Multiple Go services that each do one job — auth service, payments service, notifications service — all talking to each other via gRPC and Protocol Buffers. GraphQL gateway on top so the frontend only makes one request. Deployed on Kubernetes with full distributed tracing.</p>
+            <button>$12,000 – $50,000+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── DEVOPS ── -->
+    <div class="Full-pricing-box">
+      <h1 class="skill">DEVOPS — Docker · Kubernetes · Nginx · CI/CD</h1>
+      <p style="margin: 0.5rem 0 0 0;">DevOps is about making sure your app runs reliably, scales when needed, and deploys safely without you doing it manually every time. Think of it as the infrastructure your app lives on.</p>
+
+      <div class="price-card" id="seven">
+        <h1>WHAT I CAN SET UP FOR YOU</h1>
+        <ul>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Docker</strong> — packages your app into a container so it runs exactly the same on any server, no more "it works on my laptop" problems</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Kubernetes (K8s)</strong> — automatically runs more copies of your app when traffic goes up, and fewer when it goes down, so you only pay for what you use</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Nginx</strong> — sits in front of your app, handles HTTPS/SSL certificates, routes users to the right service, and protects from basic attacks</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Redis</strong> — a super-fast memory store used for caching (speed), sessions (login state), and OTP codes (phone/email verification)</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>CI/CD pipeline</strong> — every time you push new code to GitHub, it is automatically tested and deployed with zero downtime. No manual FTP uploads, no server SSH every time</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Monitoring</strong> — Prometheus collects data about your app's health, Grafana shows it as live charts so you know before users complain</li>
+        </ul>
+
+        <div class="react-divs">
+          <div class="react-div" style="color:black;">
+            <h1>DOCKERISE EXISTING APP</h1>
+            <p>Take your current project and wrap it in Docker so it is easy to run anywhere — local machine, any cloud, any server. Includes Docker Compose for local development.</p>
+            <button>$200 – $600</button>
+          </div>
+          <div class="react-div" style="color:black;">
+            <h1>NGINX + SSL + REDIS SETUP</h1>
+            <p>Set up Nginx as your app's front door with HTTPS, and Redis for fast caching and OTP storage. Your site becomes secure and snappy overnight.</p>
+            <button>$300 – $900</button>
+          </div>
+          <div class="react-div" style="color:black;">
+            <h1>CI/CD PIPELINE</h1>
+            <p>Automate deployment with GitHub Actions — push code, tests run automatically, and if they pass the app goes live. No manual work ever again.</p>
+            <button>$400 – $1,200</button>
+          </div>
+          <div class="react-div" style="color:black;">
+            <h1>FULL KUBERNETES CLUSTER</h1>
+            <p>Complete production infrastructure — K8s cluster, auto-scaling, Nginx ingress, SSL, monitoring dashboards, and CI/CD. Your app is ready for serious traffic from day one.</p>
+            <button>$2,000 – $10,000</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ADD-ONS ── -->
+    <div class="Full-pricing-box">
+      <h1 class="skill">ADD-ON FEATURES</h1>
+      <p style="margin: 0.5rem 0 0 0;">These are individual features that can be added to any project. If you already have an existing app and just need one of these, I can build it separately.</p>
+
+      <div class="price-card" id="eight">
+        <h1>PICK WHAT YOU NEED</h1>
+        <ul>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>OTP Login (phone or email code)</strong> — instead of just a password, users get a one-time code to verify it is really them — $150 – $400</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Email system with Nodemailer</strong> — send welcome emails, order confirmations, password resets automatically — $150 – $400</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>GraphQL API</strong> — smarter API where the frontend asks for exactly the data it needs, nothing more, nothing less — $400 – $2,000</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>TanStack Query</strong> — the frontend stays updated with fresh data automatically, loading states handled, no stale information — $200 – $800</li>
+          <li><i class="ri-verified-badge-fill icon"></i><strong>Payment gateway</strong> — accept online payments via Razorpay (India) or Stripe (international), with subscription and refund support — $300 – $1,200</li>
+        

@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Rakkas&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alice&family=Odor+Mean+Chey&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: whitesmoke;
+
+}
+
+.bg-black {
+  background: #0A0A0A;
+  color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background: whitesmoke;
+  
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+      
+
+  color: white;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+
+}
+
+
+.navbar {
+  max-width: 868px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  
+}
+
+nav .logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  padding: 0.3rem 0 0 0.5rem;
+}
+
+.navbar ul li a {
+
+  padding: 0.4rem 0.7rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.navbar ul li:hover a{
+  font-weight: 400;
+  opacity: 0.50;
+  transition: 0.2s;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+}
+
+nav ul li button {
+  padding: 0.3rem 1rem;
+  border: none;
+  color: white;
+  background: #0A0A0A;
+  border-radius: 5px;
+  font-size: 17px;
+
+}
+
+nav ul li a button {
+  padding: 0.3rem 1rem;
+  border: none;
+  color: white;
+  background: #0A0A0A;
+  border-radius: 5px;
+  font-size: 17px;
+
+}
+
+
+.home,
+.hire,
+.payment {
+  max-width: 768px;
+  margin: auto;
+  padding: 2rem 0.5rem;
+}
+
+.heading {
+  max-width: 500px;
+}
+
+.home h1 {
+  font-size: 4.1rem;
+  font-family: "Rakkas", serif;
+  font-weight: 400;
+  line-height: 4.2rem;
+  word-break: break-all;
+}
+
+.home p {
+  font-size: 1.7rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  margin: 0.5rem 0;
+
+}
+
+.home button,
+.hire-card button {
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  margin: 0.7rem 0;
+  transition: 0.2s ease;
+  background: #fafafa;
+  font-size: 17px;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .13), 0 1px 4px 0 rgba(0, 0, 0, .11);
+}
+
+.work-section {
+  background: black;
+  padding: 0rem 0.3rem;
+  display: flex;
+  justify-content: flex-start;
+  overflow: scroll;
+}
+
+.work {
+  min-width: 230px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 1rem 0.5rem;
+  margin: auto;
+}
+
+.work p {
+
+  font-weight: 500;
+
+}
+
+#border-right {
+  border-right: 0.5px solid white;
+}
+
+.about-btn {
+  padding: 1.5rem 0rem;
+  background: whitesmok;
+}
+
+.home button:hover {
+  font-weight: 700;
+  color: gray;
+  background: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.skill {
+  max-width: 768px;
+  margin: auto;
+  padding: 1rem 0.5rem;
+  display: flex;
+   flex-wrap:wrap;
+   justify-content: flex-start;
+   gap:14px;
+}
+
+.skill-heading,
+.project-heading,
+.client-heading,
+.hire-heading,
+.payment-heading {
+  max-width: 768px;
+  margin: auto;
+  font-family: "Odor Mean Chey", serif;
+  font-weight: 300;
+  padding: 2rem 0 0 0;
+}
+
+.w-color {
+  color: #fdfdfd;
+}
+
+.skill-card {
+  width: 200px;
+  color: Whitesmoke;
+  border-radius: 11px;
+  padding: 0.5rem;
+  color: black;
+  margin: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background: #fafafa;
+  color: #0A0A0A;
+}
+
+.skill-card h1 {
+  font-family: "Gabriela", serif;
+  font-size: 1.6rem;
+
+}
+
+.skill-card button {
+  width: 100%;
+  padding: 0.3rem 0;
+  margin: 0.5rem 0;
+  border: none;
+  background: #fafafa;
+  color: #0A0A0A;
+  font-size: 17px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card:hover button {
+  transition: 0.3s;
+  color: black;
+
+}
+
+.skill-card:hover {
+  opacity: 0.70;
+  color: black;
+}
+
+
+
+.f-project {
+  width: 230px;
+  background: #FDFDFD;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  font-family: "Aboreto", system-ui;
+
+  font-weight: 400;
+  margin: 1rem 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+  color: black;
+}
+
+.all-projects {
+  max-width: 768px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+}
+
+
+.f-project p {
+  font-family: "Gabriela", serif;
+  font-size: 1rem;
+  margin: 0 0 0.3rem 0;
+
+}
+
+.f-project button {
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 12px 28px 0px rgba(140, 149, 159, 0.5);
+  font-size: 1rem;
+  font-family: "Gabriela", serif;
+  font-weight: 100;
+  display: block;
+  margin: auto;
+  background: black;
+  color: whitesmoke;
+}
+
+.f-project:hover {
+  opacity: 0.70;
+  transition: 0.2s;
+}
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0rem 0.5rem;
+  max-width: 768px;
+  margin: auto;
+}
+
+.box-client {
+  max-width: 350px;
+  color: #0A0A0A;
+  background: white;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.box-client:hover {
+  box-shadow: 0px 7px 21px 0px rgba(140, 149, 159, 0.3);
+  color: gray;
+  transition: 0.2s ease;
+}
+
+.box-client img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.box-client h2,
+.hire-card h2 {
+  font-family: "Aboreto", system-ui;
+  font-weight: 700;
+}
+
+.box-client p {
+  font-family: "Gabriela", serif;
+  margin: 0.2rem 0 0.5rem 0;
+}
+
+.hire-card img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 11px;
+}
+
+.hire-card {
+  width: 100%;
+  padding: 1rem;
+  background: white;
+  color: #0A0A0A;
+  margin: 0.5rem 0;
+  border-radius: 11px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hire-card h2 {
+  background: #0A0A0A;
+  padding: 0.4rem;
+  color: whitesmoke;
+  width: 300px;
+  text-align: center;
+  margin: 0.3rem 0;
+}
+
+.hire-card button:hover {
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  color: white;
+  transition: 0.2s;
+}
+
+.payment-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #0A0A0A;
+}
+
+.payment-card img {
+  max-width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin: 0 0 2rem 1.5rem;
+}
+
+.payment-card img:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 7px 21px 0px rgba(140, 149, 159, 0.2);
+  transition: 0.2s;
+}
+
+footer {
+  padding: 2rem 0.5rem;
+
+}
+
+.footer {
+  max-width: 768px;
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+footer h3 {
+  font-family: "Aboreto", system-ui;
+  text-align: center;
+  padding: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.footer .left p {
+  font-family: "Gabriela", serif;
+  margin: 1.5rem 0;
+  color: #0A0A0A;
+  background: #fdfdfd;
+  padding: 1rem 0.5rem;
+  max-width: 400px;
+  border-radius: 35px;
+  box-shadow: 0px 7px 15px 0px rgba(140, 149, 159, 0.4);
+}
+
+.footer {
+  font-weight: bolder;
+}
+
+.footer .right {
+  width: 300px;
+  height: auto;
+  background: white;
+  color: black;
+  padding: 1rem 0.5rem;
+  margin: 0.5rem;
+  font-family: "Gabriela", serif;
+  text-align: center;
+  border-radius: 21px;
+  box-shadow: 0px 7px 21px 0px rgba(140, 149, 159, 0.3);
+
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:568px) {
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    right:0;
+    left: 0;
+    width: 0;
+    border-bottom-right-radius: 21px;
+    border-bottom-left-radius: 21px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    overflow: hidden;
+    background: #050606;
+    padding: 1rem 0.3rem;
+    transition:0.3s;
+  }
+
+  .show-navbar{
+    width:300px;
+  
+  }
+
+  nav ul li  {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li button {
+    background: whitesmoke;
+    color: #0A0A0A;
+    padding: 0.3rem 0.7rem;
+    border-radius: 11px;
+
+  }
+
+  .navbar ul li a {
+    display: block;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    color: #fdfdfd;
+    
+  }
+.navbar ul li:hover a{
+    opacity:1;
+    border-radius: 2px;
+    background:white;
+    color:black;
+  }
+  nav ul li a button {
+    width: 100%;
+    border-radius: 11px;
+    padding: 0.5rem 0;
+    background: whitesmoke;
+    color: black;
+    margin: 0;
+  }
+
+  nav ul li a button:hover {
+    font-weight: 700;
+    opacity: 0.95;
+  }
+
+  .heading {
+    width: 300px;
+
+  }
+
+  .home h1 {
+    font-size: 4rem;
+    word-spacing: 11px;
+  }
+
+  .hamburg {
+    position: absolute;
+    right: 0.5rem;
+  }
+
+  .hamburg div {
+    width: 31px;
+    height: 3.5px;
+    margin: 6px 0;
+    border-radius: 5px;
+    background: #050606;
+  }
+
+  .skill-card {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width:450px) {
+
+  .skill,
+  .all-projects,
+  .clients {
+    display: flex;
+    justify-content: center;
+  }
+}

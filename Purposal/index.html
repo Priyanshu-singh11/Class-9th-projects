@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Will You Marry Me?</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    min-height: 100vh;
+    background: #0d0008;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    padding: 2rem 1rem;
+    overflow-x: hidden;
+  }
+
+  .stars {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle var(--d) ease-in-out infinite;
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.1; transform: scale(1); }
+    50% { opacity: 0.9; transform: scale(1.4); }
+  }
+
+  .page-wrap {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 680px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 28px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hero {
+    background: #7c0057;
+    padding: 3.5rem 2.5rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: -60px;
+    width: 220px; height: 220px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.04);
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; right: -40px;
+    width: 280px; height: 280px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.04);
+  }
+
+  .floating-hearts {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .fh {
+    position: absolute;
+    color: rgba(255,255,255,0.15);
+    font-size: 1.4rem;
+    animation: floatUp var(--d, 5s) ease-in-out infinite;
+  }
+
+  @keyframes floatUp {
+    0% { transform: translateY(60px) scale(0.8); opacity: 0; }
+    30% { opacity: 1; }
+    100% { transform: translateY(-80px) scale(1.2); opacity: 0; }
+  }
+
+  .hero-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.9);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    padding: 0.35rem 1.2rem;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .hero-name {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #fff;
+    font-size: clamp(2.2rem, 7vw, 3.4rem);
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 1.8rem;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+  }
+
+  .ring-icon {
+    font-size: 3.8rem;
+    display: inline-block;
+    animation: ringBounce 2s ease-in-out infinite;
+    position: relative;
+    z-index: 1;
+  }
+
+  @keyframes ringBounce {
+    0%, 100% { transform: translateY(0) rotate(-8deg); }
+    50% { transform: translateY(-12px) rotate(8deg); }
+  }
+
+  .body {
+    padding: 2rem 2rem 0;
+  }
+
+  .love-banner {
+    text-align: center;
+    padding: 1.5rem 1.5rem;
+    background: #fdf0f8;
+    border-radius: 18px;
+    border: 1px solid #f2c0e0;
+    margin-bottom: 2rem;
+  }
+
+  .love-banner h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #7c0057;
+    margin-bottom: 0.4rem;
+  }
+
+  .love-banner p {
+    font-size: 0.88rem;
+    color: #b5006f;
+    font-style: italic;
+  }
+
+  .section-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #aaa;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-yes-reasons, .btn-truth {
+    padding: 1rem 0.75rem;
+    border: none;
+    border-radius: 14px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.18s, box-shadow 0.18s;
+    line-height: 1.4;
+  }
+
+  .btn-yes-reasons {
+    background: #7c0057;
+    color: #fff;
+  }
+
+  .btn-truth {
+    background: #f5f5f5;
+    color: #444;
+    border: 1px solid #e0e0e0;
+  }
+
+  .btn-yes-reasons:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(124,0,87,0.4); }
+  .btn-truth:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,0.13); }
+  .btn-yes-reasons:active, .btn-truth:active { transform: scale(0.97); }
+  .btn-yes-reasons.active { box-shadow: 0 0 0 3px rgba(124,0,87,0.35); }
+  .btn-truth.active { box-shadow: 0 0 0 3px rgba(0,0,0,0.12); }
+
+  .cards-grid {
+    display: none;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-bottom: 2rem;
+  }
+
+  .cards-grid.show {
+    display: flex;
+    animation: slideIn 0.45s ease;
+  }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .bcard {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 1.1rem;
+    border-radius: 14px;
+    animation: popIn 0.3s ease both;
+  }
+
+  @keyframes popIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  .bcard.adv {
+    background: #fdf0f8;
+    border: 1px solid #f2c0e0;
+  }
+
+  .bcard.dis {
+    background: #f9f9f9;
+    border: 1px solid #e8e8e8;
+  }
+
+  .bcard-icon {
+    font-size: 1.6rem;
+    flex-shrink: 0;
+    line-height: 1;
+    margin-top: 2px;
+  }
+
+  .bcard-body strong {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #7c0057;
+    margin-bottom: 0.25rem;
+  }
+
+  .bcard.dis .bcard-body strong { color: #444; }
+
+  .bcard-body span {
+    font-size: 0.8rem;
+    color: #777;
+    line-height: 1.55;
+  }
+
+  .proposal-section {
+    text-align: center;
+    padding: 2rem 2rem 2.5rem;
+    border-top: 1px solid #f5e8f2;
+  }
+
+  .proposal-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: #7c0057;
+    line-height: 1.65;
+    margin-bottom: 1.75rem;
+    padding: 0 1rem;
+  }
+
+  .big-yes-btn {
+    background: #7c0057;
+    color: #fff;
+    border: none;
+    border-radius: 60px;
+    padding: 1.1rem 3rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.15s;
+    animation: pulseBig 2.2s ease-in-out infinite;
+  }
+
+  @keyframes pulseBig {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(124,0,87,0.5); }
+    60% { box-shadow: 0 0 0 18px rgba(124,0,87,0); }
+  }
+
+  .big-yes-btn:hover { transform: scale(1.06); }
+  .big-yes-btn:active { transform: scale(0.97); }
+
+  .celebration {
+    display: none;
+    animation: fadeIn 0.7s ease;
+  }
+
+  .celebration.show { display: block; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.85); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  .cel-emoji { font-size: 3rem; display: block; margin-bottom: 0.75rem; }
+
+  .cel-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #7c0057;
+    margin-bottom: 0.5rem;
+  }
+
+  .cel-sub {
+    font-size: 0.88rem;
+    color: #b5006f;
+    font-style: italic;
+  }
+
+  .floating-particle {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    font-size: 1.6rem;
+    animation: riseParticle var(--dur) ease forwards;
+  }
+
+  @keyframes riseParticle {
+    0% { transform: translateY(0) rotate(0deg) scale(0.5); opacity: 1; }
+    100% { transform: translateY(-100vh) rotate(360deg) scale(1.4); opacity: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="stars" id="stars"></div>
+
+<div class="page-wrap">
+  <div class="card">
+
+    <div class="hero">
+      <div class="floating-hearts" id="fhearts"></div>
+      <div class="hero-tag">A message from my heart</div>
+      <h1 class="hero-name">My Pretty Little Baby</h1>
+      <p class="hero-sub">"In a world full of people, my eyes always search for you."</p>
+      <span class="ring-icon">💍</span>
+    </div>
+
+    <div class="body">
+
+      <div class="love-banner">
+        <h2>I Love You, Truly &amp; Forever</h2>
+        <p>Every heartbeat of mine has your name written on it...</p>
+      </div>
+
+      <p class="section-label">Choose what you want to know</p>
+
+      <div class="btns">
+        <button class="btn-yes-reasons" onclick="showCards('adv', this)">
+          💍 Why say YES to me
+        </button>
+        <button class="btn-truth" onclick="showCards('dis', this)">
+          😅 The honest fine print
+        </button>
+      </div>
+
+      <div class="cards-grid" id="adv-cards">
+        <div class="bcard adv" style="animation-delay:0s">
+          <span class="bcard-icon">💞</span>
+          <div class="bcard-body">
+            <strong>Endless, unconditional love</strong>
+            <span>You will be loved so deeply — on your best days, your worst days, and every ordinary day in between. No conditions, no expiry date, ever.</span>
+          </div>
+        </div>
+        <div class="bcard adv" style="animation-delay:0.07s">
+          <span class="bcard-icon">🤗</span>
+          <div class="bcard-body">
+            <strong>The warmest hugs, always</strong>
+            <span>Every morning, every bad day, every happy moment — my arms are your permanent safe place. You will never feel alone.</span>
+          </div>
+        </div>
+        <div class="bcard adv" style="animation-delay:0.14s">
+          <span class="bcard-icon">💋</span>
+          <div class="bcard-body">
+            <strong>More kisses than you can count</strong>
+            <span>On your forehead, your cheek, your hand — little reminders all day long that you are completely and totally adored.</span>
+          </div>
+        </div>
+        <div class="bcard adv" style="animation-delay:0.21s">
+          <span class="bcard-icon">🌟</span>
+          <div class="bcard-body">
+            <strong>Your biggest fan, forever</strong>
+            <span>I will cheer for you, believe in you, and stand beside you through every dream, every challenge, every season of life.</span>
+          </div>
+        </div>
+        <div class="bcard adv" style="animation-delay:0.28s">
+          <span class="bcard-icon">🔥</span>
+          <div class="bcard-body">
+            <strong>A passion that never fades</strong>
+            <span>Our connection — physical, emotional, spiritual — I promise to keep that fire burning bright, always choosing you every single day.</span>
+          </div>
+        </div>
+        <div class="bcard adv" style="animation-delay:0.35s">
+          <span class="bcard-icon">🌹</span>
+          <div class="bcard-body">
+            <strong>A lifetime of beautiful moments</strong>
+            <span>Adventures, lazy Sundays, late nights just talking — a whole life built together, one precious memory at a time.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards-grid" id="dis-cards">
+        <div class="bcard dis" style="animation-delay:0s">
+          <span class="bcard-icon">👶</span>
+          <div class="bcard-body">
+            <strong>Yes, there will be diaper duty</strong>
+            <span>Our little babies will need cleaning — and I will be right there beside you for every single messy moment. Full team effort, I promise!</span>
+          </div>
+        </div>
+        <div class="bcard dis" style="animation-delay:0.07s">
+          <span class="bcard-icon">😴</span>
+          <div class="bcard-body">
+            <strong>Sleepless nights are included</strong>
+            <span>Babies do not follow schedules. But we will survive every 3am wake-up call together, holding each other through it all.</span>
+          </div>
+        </div>
+        <div class="bcard dis" style="animation-delay:0.14s">
+          <span class="bcard-icon">🎮</span>
+          <div class="bcard-body">
+            <strong>I might hog the remote sometimes</strong>
+            <span>Guilty as charged. But Fridays are always yours to pick what we watch. Fair deal?</span>
+          </div>
+        </div>
+        <div class="bcard dis" style="animation-delay:0.21s">
+          <span class="bcard-icon">😅</span>
+          <div class="bcard-body">
+            <strong>I am not perfect</strong>
+            <span>I will make mistakes, forget things, and occasionally be annoying. But I will always say sorry and keep trying to be better for you.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="proposal-section">
+      <p class="proposal-quote">
+        "I don't just want to be with you —<br>
+        I want to build a whole life, a family,<br>
+        and a love story worth telling forever."
+      </p>
+
+      <div id="yes-btn-wrap">
+        <button class="big-yes-btn" onclick="celebrate()">
+          💍 &nbsp; Yes, I will marry you!
+        </button>
+      </div>
+
+      <div class="celebration" id="celebration">
+        <span class="cel-emoji">🎊💍🎉</span>
+        <p class="cel-text">She Said YES!</p>
+        <p class="cel-sub">This is the best moment of my entire life. I love you forever and always.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  const starsEl = document.getElementById('stars');
+  for (let i = 0; i < 90; i++) {
+    const s = document.createElement('div');
+    s.className = 'star';
+    const size = Math.random() * 2.5 + 0.5;
+    s.style.cssText = `
+      width:${size}px;height:${size}px;
+      left:${Math.random()*100}%;
+      top:${Math.random()*100}%;
+      --d:${2 + Math.random()*4}s;
+      animation-delay:${Math.random()*5}s;
+    `;
+    starsEl.appendChild(s);
+  }
+
+  const fhEl = document.getElementById('fhearts');
+  const fhList = ['❤️','💕','💖','💗','🌹','✨','💫'];
+  for (let i = 0; i < 10; i++) {
+    const h = document.createElement('div');
+    h.className = 'fh';
+    h.textContent = fhList[Math.floor(Math.random() * fhList.length)];
+    h.style.cssText = `
+      left:${Math.random()*90}%;
+      bottom:${Math.random()*20}%;
+      --d:${3 + Math.random()*3}s;
+      animation-delay:${Math.random()*4}s;
+    `;
+    fhEl.appendChild(h);
+  }
+
+  function showCards(type, btn) {
+    document.querySelectorAll('.cards-grid').forEach(g => g.classList.remove('show'));
+    document.querySelectorAll('.btn-yes-reasons,.btn-truth').forEach(b => b.classList.remove('active'));
+    document.getElementById(type + '-cards').classList.add('show');
+    btn.classList.add('active');
+  }
+
+  function celebrate() {
+    document.getElementById('yes-btn-wrap').style.display = 'none';
+    document.getElementById('celebration').classList.add('show');
+    const items = ['💖','💕','🌹','💍','✨','🎉','💗','⭐','🌸'];
+    for (let i = 0; i < 30; i++) {
+      setTimeout(() => {
+        const p = document.createElement('div');
+        p.className = 'floating-particle';
+        p.textContent = items[Math.floor(Math.random() * items.length)];
+        p.style.cssText = `
+          left:${Math.random()*100}vw;
+          bottom:0;
+          --dur:${2.5 + Math.random()*2}s;
+          animation-delay:${Math.random()*0.5}s;
+        `;
+        document.body.appendChild(p);
+        setTimeout(() => p.remove(), 5000);
+      }, i * 80);
+    }
+  }
+</script>
+</body>
+</html>

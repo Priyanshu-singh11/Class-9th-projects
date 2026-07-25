@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #eef2ff, #dbeafe);
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.heading {
+  text-align: center;
+  font-size: 42px;
+  color: #1f2937;
+  margin-bottom: 40px;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 170px;
+  height: 170px;
+  object-fit: contain;
+  transition: 0.4s;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+.card h2 {
+  margin-top: 15px;
+  text-transform: capitalize;
+  color: #111827;
+}
+
+.card p {
+  color: #6b7280;
+  margin: 10px 0 20px;
+  font-weight: 600;
+}
+
+.card button {
+  border: none;
+  outline: none;
+  background: #2563eb;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.card button:hover {
+  background: #1d4ed8;
+}
+
+.loading-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader {
+  width: 70px;
+  height: 70px;
+  border: 7px solid #e5e7eb;
+  border-top: 7px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 20px;
+}
+
+.loading-container h2 {
+  color: #374151;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
